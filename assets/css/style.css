@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body { 
+  background-color: #DAD9D5;
+  font-size: 1rem;
+  color: #3B3633;
+  font-weight: 400;
+
+  font-family: "Inter", sans-serif;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
