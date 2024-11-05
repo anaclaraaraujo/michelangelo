@@ -18,6 +18,7 @@ h1 {
   font-size: 3.2rem;
   font-weight: bold;
   color: var(--highlight-color);
+  opacity: 0;
 }
 
 span {
@@ -38,12 +39,6 @@ span {
   font-weight: 400;
   line-height: 3.2rem;
   color: var(--text-color);
-}
-
-.image-content img:hover,
-.image-content-sistine-chapel img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
 }
 
 @media (min-width: 768px) {

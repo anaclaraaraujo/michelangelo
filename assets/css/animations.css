@@ -1,0 +1,62 @@
+h1, span {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+h1.visible, span.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-content p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.text-content p.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-content img.visible:hover,
+.image-content-sistine-chapel img.visible:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.image-content img, 
+.image-content-sistine-chapel img {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease; 
+  border-radius: 0.6rem;
+  will-change: opacity, transform;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-content img.visible,
+.image-content-sistine-chapel img.visible {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+footer p,
+footer .links ul,
+footer .copyright p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 5s ease, transform 5s ease;
+  will-change: opacity, transform;
+}
+
+footer p.visible,
+footer .links ul.visible,
+footer .copyright p.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
