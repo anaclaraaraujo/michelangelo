@@ -3,35 +3,40 @@
 }
 
 .banner p {
-    position: absolute;
-    bottom: -0.5rem;
-    left: 2.4rem; 
-    font-size: 3.2rem;
-    font-weight: bold;;
-    color: #3B3633;
-    z-index: 10;
+  position: absolute;
+  bottom: -0.5rem; 
+  left: 2.4rem; 
+  font-size: 3.2rem; 
+  font-weight: bold;
+  color: var(--text-color);
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
   .banner p {
-    bottom: -1.3rem;
+    bottom: -1rem; 
     left: 4rem; 
-    font-size: 6.4rem;
+    font-size: 4rem; 
   }
 }
 
 @media (min-width: 1024px) {
   .banner p {
-    bottom: -1.3rem;
-    left: 16.9rem; 
-    font-size: 6.4rem;
+    bottom: -1.5rem; 
+    left: 10rem; 
+    font-size: 6rem; 
   }
 }
 
 @media (min-width: 1440px) {
   .banner p {
-    bottom: -2.5rem;
-    left: 10.5rem; 
-    font-size: 12rem;
+    bottom: -2rem; 
+    left: 12rem; 
+    font-size: 8rem; 
+  }
+
+  .banner img {
+    height: 64rem;
+    object-fit: cover;
   }
 }

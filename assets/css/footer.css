@@ -2,32 +2,24 @@ footer {
   padding: 6rem 0;
 }
 
-
-footer>p:first-child {
+footer > p:first-child {
   font-size: 8rem;
   font-weight: 500;
   background: linear-gradient(68deg, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 0) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-
   margin-bottom: 10rem;
 }
-
 
 footer .links {
   margin: 0 2.4rem;
   padding: 4rem 0;
-
   display: flex;
   flex-direction: column;
   gap: 8rem;
-
-  border-top: .1rem solid #3B3633;
-  border-bottom: .1rem solid #3B3633;
-}
-footer .links ul:first-child li:first-child a {
-  font-weight: bold;
+  border-top: 0.1rem solid var(--text-color);
+  border-bottom: 0.1rem solid var(--text-color);
 }
 
 footer .links ul {
@@ -38,9 +30,13 @@ footer .links ul {
 footer .links a {
   font-size: 3.2rem;
   font-weight: 300;
-  color: #3B3633;
+  color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
+}
+
+footer .links ul:first-child li:first-child a {
+  font-weight: bold;
 }
 
 footer .copyright {
@@ -50,24 +46,14 @@ footer .copyright {
   text-align: center;
   display: flex;
   flex-direction: column;
-
   gap: 3.2rem;
 }
 
-footer .copyright p {
-  font-size: 1.6rem;
-  font-weight: 400;
-
-  color: #3B3633;
-  width: 20rem;
-}
-
+footer .copyright p, 
 footer .copyright a {
   font-size: 1.6rem;
   font-weight: 400;
-
-  color: #3B3633;
-
+  color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
 }
@@ -75,40 +61,38 @@ footer .copyright a {
 footer .copyright a:hover,
 footer .links a:hover {
   font-weight: bold;
-  color: #BB2215;
+  color: var(--highlight-color);
 }
 
-.copyright ul {
+footer .copyright ul {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
 }
 
 @media (min-width: 768px) {
-
-  footer>p:first-child {
+  footer > p:first-child {
     font-size: 16.8rem;
   }
-
+  
   footer .links,
   footer .copyright {
     margin: 0 4rem;
   }
-
+  
   footer .links {
     flex-direction: row;
     justify-content: space-between;
   }
-
+  
   footer .copyright ul {
     flex-direction: row;
   }
-
+  
   footer .copyright p {
     text-align: start;
     width: 100%;
   }
-
+  
   footer .copyright {
     text-align: start;
     align-items: start;
@@ -116,7 +100,7 @@ footer .links a:hover {
 }
 
 @media (min-width: 1024px) {
-  footer>p:first-child {
+  footer > p:first-child {
     font-size: 21.9rem;
   }
 
@@ -127,7 +111,7 @@ footer .links a:hover {
 }
 
 @media (min-width: 1440px) {
-  footer>p:first-child {
+  footer > p:first-child {
     font-size: 30.5rem;
   }
 

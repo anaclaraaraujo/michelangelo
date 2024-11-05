@@ -1,8 +1,9 @@
 main {
   padding: 6rem 2.4rem;
-
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 6rem;
 }
 
@@ -10,23 +11,23 @@ main {
   display: flex;
   flex-direction: column;
   gap: .8rem;
-
   padding-bottom: 2.4rem;
 }
 
 h1 {
   font-size: 3.2rem;
   font-weight: bold;
-  color: #BB2215;
+  color: var(--highlight-color);
 }
 
 span {
   font-size: 1.6rem;
   font-weight: 500;
-  color: #3B3633;
+  color: var(--text-color);
 }
 
-.text-content {
+.text-content,
+.image-content {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -36,14 +37,13 @@ span {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 3.2rem;
-
-  color: #3B3633;
+  color: var(--text-color);
 }
 
-.image-content {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
+.image-content img:hover,
+.image-content-sistine-chapel img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 @media (min-width: 768px) {
@@ -52,7 +52,6 @@ span {
   }
 
   .image-content {
-    display: flex;
     flex-direction: row;
     height: 85.4rem;
   }
@@ -62,8 +61,7 @@ span {
     position: relative;
   }
 
-  .image-content-life img,
-  .image-content-style-work img {
+  .image-content img {
     position: absolute;
     width: 32.8rem;
   }
@@ -97,40 +95,30 @@ span {
 
 @media (min-width: 1440px) {
   main {
+    width: 100%;
     padding: 6rem 11.2rem;
   }
 
-  main section {
+  main .content {
+    max-width: 121.6rem;
+  }
+
+  .content section {
     display: flex;
     gap: 8rem;
-
     padding: 4rem 10rem 4rem 0;
   }
 
-  main section .title {
+  .content section .title {
     min-width: 28.4rem;
   }
 
   .image-content {
-    display: flex;
-    flex-direction: row;
     height: 42rem;
   }
 
-  .image-content-life,
-  .image-content-style-work {
-    position: relative;
-  }
-
-  .image-content-life img,
-  .image-content-style-work img {
-    position: absolute;
+  .image-content img {
     width: 28rem;
-  }
-
-  .image-content img:nth-child(1) {
-    top: 0rem;
-    left: 0rem;
   }
 
   .image-content img:nth-child(2) {
@@ -141,10 +129,5 @@ span {
   .image-content img:nth-child(3) {
     top: 0rem;
     right: 31.2rem;
-  }
-
-  .image-content img:nth-child(4) {
-    bottom: 0rem;
-    right: 0rem;
   }
 }

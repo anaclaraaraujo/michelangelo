@@ -5,15 +5,17 @@
 }
 
 :root {
+  --background-color: #DAD9D5;
+  --text-color: #3B3633;
+  --highlight-color: #BB2215;
   font-size: 62.5%;
 }
 
 body { 
-  background-color: #DAD9D5;
+  background-color: var(--background-color);
   font-size: 1rem;
-  color: #3B3633;
+  color: var(--text-color);
   font-weight: 400;
-
   font-family: "Inter", sans-serif;
 }
 
