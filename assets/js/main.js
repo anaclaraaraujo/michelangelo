@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll('.image-content img, .image-content-sistine-chapel img');
+    const images = document.querySelectorAll('.image-content img, .image-content-sistine-chapel img, .image-content-pietra img');
     const texts = document.querySelectorAll('.text-content p, .title h1, .title span, footer p, footer .links ul, footer .copyright p');
 
     const observerOptions = {

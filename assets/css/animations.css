@@ -23,13 +23,15 @@ h1.visible, span.visible {
 }
 
 .image-content img.visible:hover,
-.image-content-sistine-chapel img.visible:hover {
+.image-content-sistine-chapel img.visible:hover
+.image-content-pietra img.visible:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 
 .image-content img, 
-.image-content-sistine-chapel img {
+.image-content-sistine-chapel img,
+.image-content-pietra img {
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 1s ease, transform 1s ease; 
@@ -39,7 +41,8 @@ h1.visible, span.visible {
 }
 
 .image-content img.visible,
-.image-content-sistine-chapel img.visible {
+.image-content-sistine-chapel img.visible,
+.image-content-pietra img.visible {
   opacity: 1;
   transform: translateY(0);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);

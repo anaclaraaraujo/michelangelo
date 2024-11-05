@@ -1,9 +1,11 @@
 main {
   padding: 6rem 2.4rem;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 6rem;
 }
 
@@ -18,7 +20,7 @@ h1 {
   font-size: 3.2rem;
   font-weight: bold;
   color: var(--highlight-color);
-  opacity: 0;
+  text-transform: uppercase;
 }
 
 span {
@@ -52,7 +54,9 @@ span {
   }
 
   .image-content-life,
-  .image-content-style-work {
+  .image-content-style-work,
+  .image-content-david,
+  .image-content-moises {
     position: relative;
   }
 
