@@ -1,6 +1,9 @@
 # Projeto Michelangelo
 
-**Michelangelo** é um site dedicado à vida e obra do famoso artista renascentista Michelangelo Buonarroti. O projeto apresenta informações sobre sua biografia, suas obras mais icônicas e seu legado na história da arte.
+Explore o legado de Michelangelo Buonarroti, um dos maiores mestres do Renascimento, em um site que traz suas obras mais icônicas à vida. Conheça a biografia, as técnicas e os contextos por trás de suas criações.
+
+🔗 <a href="https://michelangelo.vercel.app/">Acesse o site</a>
+
 
 ## Objetivo do Projeto
 Inspirado pela grandiosidade de Michelangelo, o objetivo deste site é aproximar o público de suas criações e da história do Renascimento. 
