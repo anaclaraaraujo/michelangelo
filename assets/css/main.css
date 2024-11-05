@@ -1,5 +1,9 @@
 main {
   padding: 6rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {

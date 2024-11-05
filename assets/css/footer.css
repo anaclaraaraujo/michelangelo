@@ -86,6 +86,7 @@ footer .copyright ul {
   
   footer .copyright ul {
     flex-direction: row;
+    gap: 1rem;
   }
   
   footer .copyright p {
@@ -114,9 +115,26 @@ footer .copyright ul {
   footer > p:first-child {
     font-size: 30.5rem;
   }
-
+  
   footer .links,
   footer .copyright {
     margin: 0 11.2rem;
+  }
+}
+
+
+@media (min-width: 1920px) {
+  footer .links,
+  footer .copyright  {
+    margin: 0 24rem;
+  }
+
+  footer > p:first-child {
+    font-size: 32rem;
+    text-align: center;
+
+    .remove-br {
+      display: none;
+    }
   }
 }
